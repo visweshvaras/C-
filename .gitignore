@@ -1,0 +1,9 @@
+# Compiled executables
+*.exe
+*.out
+
+# Generated output from file-I/O examples
+run.log
+students.txt
+marks.csv
+
