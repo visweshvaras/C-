@@ -1,10 +1,10 @@
-# C++ Concepts and Experiments
+# C++ Concepts & Experiments
 
-> A structured collection of small C++ programs for learning core language features, object-oriented programming, the STL, file handling, and modern C++ techniques.
+> A hands-on C++ learning journey from the fundamentals to modern programming techniques.
 
-## What is included?
+This repository contains **39 focused programs** that turn individual C++ concepts into small, readable experiments. Each example is designed to be explored, modified, and used as a stepping stone to the next topic.
 
-The examples are organized into numbered topic folders:
+## Learning map
 
 | Section | Topics |
 | --- | --- |
@@ -22,49 +22,36 @@ The examples are organized into numbered topic folders:
 | 12 | Algorithms, lambdas, priority queues, bounds, and permutations |
 | 13 | Smart pointers, design patterns, and multithreading |
 
-There are 39 focused `.cpp` examples. Each file is intentionally small and self-contained so that one concept can be compiled, run, and modified independently.
+## What makes this collection useful?
 
-## Requirements
+- **Progressive structure:** move from syntax and functions to classes, STL, and concurrency.
+- **Small experiments:** study one idea at a time without navigating a large application.
+- **Practical examples:** work with files, records, CSV data, algorithms, memory, and threads.
+- **Built-in prompts:** use the comments and suggested extensions to continue learning.
 
-- A C++17-compatible compiler
-- Windows, Linux, or macOS
+## Suggested path
 
-## Build and run an example
+1. Begin with **1-3** to build a foundation in syntax, functions, and classes.
+2. Continue through **4-8** to understand object lifetime, relationships, and polymorphism.
+3. Explore **9-10** for robust programs and file-based data.
+4. Finish with **11-13** for reusable components, algorithms, smart pointers, patterns, and threads.
 
-From the repository root, compile a source file with:
+## Repository layout
 
-```bash
-g++ -std=c++17 "10 File Input Output/10.2_Append_Log_Count_Lines.cpp" -o example
+```text
+1 From C to CPP/
+2 Functions Overloading Default Inline/
+3 Classes Objects Encapsulation/
+...
+13 Smart Pointers Design Patterns Threads/
 ```
 
-Run it:
+Every folder contains three self-contained `.cpp` programs, making it easy to compare related techniques and track progress.
 
-```bash
-./example
-```
+## Notes
 
-On Windows PowerShell, run the generated executable with:
+- Examples target standard C++ concepts and are suitable for a C++17-compatible environment.
+- File-I/O programs may create local data files such as `students.txt`, `marks.csv`, or `run.log`.
+- This is a practice and revision repository, not a single production application.
 
-```powershell
-.\example.exe
-```
-
-Some file-I/O examples create data files such as `students.txt`, `marks.csv`, or `run.log` in the current working directory. Run them from the relevant topic folder if you want those files beside the source:
-
-```powershell
-Set-Location "10 File Input Output"
-g++ -std=c++17 10.2_Append_Log_Count_Lines.cpp -o example.exe
-.\example.exe
-```
-
-The multithreading example may require the compiler's standard thread support. With GCC on some platforms, add `-pthread`.
-
-## Learning approach
-
-1. Start with the numbered sections in order.
-2. Read the comments at the top of each program.
-3. Compile and run one example at a time.
-4. Change the inputs or extend the examples using the suggested exercises.
-
-This repository is intended for practice, experimentation, and revision—not as a single production application.
-
+> Read the comments, change the examples, break things safely, and learn by rebuilding them.
